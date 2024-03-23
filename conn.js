@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://vishakhaarayalil:4565@cluster0.0ccubke.mongodb.net/CabDb').then(
+mongoose.connect(process.env.DB_URL).then(
     ()=>{
         console.log('connected');
     }
